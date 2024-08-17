@@ -204,7 +204,6 @@ font-weight: 700;
 
 .how-to {
   padding: 40px 20px 60px 20px;
-  border-bottom: solid 1px #FEE42A;
   display: flex;
   flex-flow: column nowrap;
   justify-content: start;
@@ -304,6 +303,7 @@ font-weight: 700;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  border-top: solid 1px #FEE42A;
 }
 
 .footer__copyright {
