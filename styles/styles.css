@@ -19,6 +19,24 @@
   min-height: 100px;
 }
 
+.content__section-subtitle {
+  width: 100%;
+  font-family: 'EB Garamond';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.13;
+  margin: 0;
+}
+
+.content__section-intro {
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+
 .content_theme_dark {
   background-color: #000;
   color: #F5F5F5;
@@ -38,7 +56,7 @@
 }
 
 .text-right {
-  text-align: end;
+  text-align: right;
 }
 
 
@@ -110,17 +128,7 @@
   margin: 0;
 }
 
-.cover__text {
-  display: block;
-  font-family: 'EB Garamond';
-  font-size: 72px;
-  font-weight: 400;
-  line-height: 1;
-  color: #FFF;
-}
-
 .intro {
-  margin: 0;
   padding: 30px 20px 40px 20px;
   display: flex;
   flex-flow: column nowrap;
@@ -145,6 +153,7 @@
   text-align: start;
   font-weight: 400;
   font-size: 16px;
+  max-height: 40px;
 }
 
 .intro__date {
@@ -160,3 +169,39 @@
   line-height: 1.35;
   text-align: start;
 }
+
+.reasons {
+  padding: 40px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 32px;
+}
+
+/* Классы списка перенесены в блок reasons, так как они
+   не переиспользуются в проекте, соответственно как элементы
+   раздела не имеют смысла */
+
+.reasons__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 16px;
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+.reasons__list-item {
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: start;
+}
+
+.reasons__list-accent {
+font-weight: 700;
+}
+
+
