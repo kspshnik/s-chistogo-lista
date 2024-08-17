@@ -1,43 +1,85 @@
 .global {
   box-sizing: border-box;
-  padding: 24px 20px;
-  background-color: #000;
-  width: 360px;
+  padding: 0;
+  background-color: #1e1e1e;
   border: none;
-  margin: 0 auto;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-flow: column nowrap;
 }
+
+.content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: none;
+  width: 360px;
+  padding: 0;
+}
+
+.content_theme_dark {
+  background-color: #000;
+  color: #F5F5F5;
+}
+
+.content_theme_bright {
+  background-color: #FEE42A;
+  color: #131313;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: end;
+}
+
 
 .header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: start;
-}
+  padding: 24px 20px;
+  }
 
 .header__menu {
+  min-width: 84px;
+}
+
+.header__menu-list {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: start;
-  min-width: 84px;
   row-gap: 12px;
+  margin: 0;
 }
-
-.header__link {
-  font-family: 'Inter', sans-serif;
-  color: #F5F5F5;
-  font-size: 16px;
-  font-weight: 400;
+.header__menu-item {
+  list-style: none outside;
   text-decoration: underline;
-  line-height: 1.2;
   opacity: 1;
 }
 
-.header__link:hover {
-  opacity: 0.7;
+.header__menu-link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #F5F5F5;
+  text-decoration: inherit;
+  opacity: inherit;
+ }
+
+.header__menu-item:hover {
+  opacity: 0.9;
 }
 
-.header__link_active {
+.header__menu-item_active {
   text-decoration: none;
 }
 
@@ -47,4 +89,33 @@
   display: block
 }
 
-.
+.cover {
+  background-image: url('../images/cover.svg');
+  background-size: 95% auto;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 220px;
+  padding: 20px 0;
+}
+
+.cover__title {
+  display: block;
+  font-family: 'EB Garamond';
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  color: #FFF;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.cover__text {
+  display: block;
+  font-family: 'EB Garamond';
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  color: #FFF;
+}
+
+
