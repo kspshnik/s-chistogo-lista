@@ -249,6 +249,11 @@ font-weight: 700;
   list-style: none outside;
 }
 
+/* Проблема со снятием отступа у подзаголовка
+   текста карточки решена за счёт Flexbox и row-gap.
+   В их отсутствие пришлось бы применить составной селектор вида
+   .card_text-only h4 { ... } */
+
 .card__author {
   display: flex;
   flex-flow: column nowrap;
@@ -294,3 +299,49 @@ font-weight: 700;
   line-height: 1.35;
   text-align: start;
 }
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.footer__links {
+  flex-basis: 75px;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item {
+  list-style: none outside;
+  opacity: 1;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  opacity: inherit;
+  color: inherit;
+}
+
+.footer__item:hover {
+  opacity: 0.9;
+}
+
+
