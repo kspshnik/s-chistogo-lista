@@ -16,6 +16,7 @@
   border: none;
   width: 360px;
   padding: 0;
+  min-height: 100px;
 }
 
 .content_theme_dark {
@@ -118,4 +119,44 @@
   color: #FFF;
 }
 
+.intro {
+  margin: 0;
+  padding: 30px 20px 40px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  row-gap: 24px;
+}
 
+.intro__heading {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: start;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #CCCCCC
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.intro__date {
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  text-wrap: nowrap;
+}
+
+.intro__main-text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+  text-align: start;
+}
