@@ -1,4 +1,4 @@
-.content {
+.global {
   box-sizing: border-box;
   padding: 24px 20px;
   background-color: #000;
@@ -46,3 +46,5 @@
   width: 80px;
   display: block
 }
+
+.
