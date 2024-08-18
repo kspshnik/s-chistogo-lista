@@ -1,0 +1,345 @@
+.global {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #1e1e1e;
+  border: none;
+  margin: 0;
+  font-family: 'Inter', 'Arial', 'Helvetica', 'Segoe UI', 'Roboto', 'San Francisco', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: none;
+  width: 360px;
+  padding: 0;
+}
+
+.content__section-subtitle {
+  width: 100%;
+  font-family: 'EB Garamond','Georgia', 'Palatino Linotype', 'Palatino', 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.13;
+  margin: 0;
+}
+
+.content__section-intro {
+  font-size: 20px;
+  line-height: 1.35;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+
+.content_theme_dark {
+  background-color: #000;
+  color: #F5F5F5;
+}
+
+.content_theme_bright {
+  background-color: #FEE42A;
+  color: #131313;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: start;
+  padding: 24px 20px 30px 20px;
+  }
+
+.header__menu {
+  min-width: 84px;
+}
+
+.header__menu-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 12px;
+  margin: 0;
+}
+.header__menu-item {
+  list-style: none outside;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.header__menu-link {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #F5F5F5;
+  text-decoration: inherit;
+  opacity: inherit;
+ }
+
+.header__menu-item:hover {
+  opacity: 0.9;
+}
+
+.header__menu-item_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  height: 16px;
+  width: 80px;
+  display: block
+}
+
+.cover {
+  background-image: url('../images/cover.svg');
+  background-size: 95% auto;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 220px;
+  padding: 0 0 15px 0;
+}
+
+.cover__title {
+  display: block;
+  font-family: 'EB Garamond', 'Georgia', 'Palatino Linotype', 'Palatino', 'Times New Roman', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+  color: #FFF;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.intro {
+  padding: 20px 20px 40px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.intro__heading {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: start;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #CCCCCC
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.intro__date {
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  text-wrap: nowrap;
+}
+
+.intro__main-text {
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+  text-align: start;
+}
+
+.reasons {
+  padding: 40px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 32px;
+}
+
+/* Классы списка перенесены в блок reasons, так как они
+   не переиспользуются в проекте, соответственно как элементы
+   раздела не имеют смысла */
+
+.reasons__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 16px;
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+.reasons__list-item {
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: start;
+}
+
+.reasons__list-accent {
+font-weight: 700;
+}
+
+.how-to {
+  padding: 40px 20px 60px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 32px;
+}
+
+.cards-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 8px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.card_theme_dark {
+  color:#F5F5F5;
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  color: #131313;
+  background-color: #FEE42A;
+}
+
+.card__list-item {
+  list-style: none outside;
+}
+
+/* Проблема со снятием отступа у подзаголовка
+   текста карточки решена за счёт Flexbox и row-gap.
+   В их отсутствие пришлось бы применить составной селектор вида
+   .card_text-only h4 { ... } */
+
+.card__author {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 8px;
+}
+
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: start;
+  margin: 0;
+
+}
+
+.card__content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  row-gap: 8px;
+}
+.card__title {
+  margin: 0;
+  font-family: 'EB Garamond','Georgia', 'Palatino Linotype', 'Palatino', 'Times New Roman', serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: start;
+}
+
+.card__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: start;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #FEE42A;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.footer__links {
+  flex-basis: 75px;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item {
+  list-style: none outside;
+  opacity: 1;
+}
+
+.footer__link {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  opacity: inherit;
+  color: inherit;
+}
+
+.footer__item:hover {
+  opacity: 0.9;
+}
+
+
